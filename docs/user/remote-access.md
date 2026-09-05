@@ -147,9 +147,7 @@ remote environments, the server can advertise a Tailscale MagicDNS or local mDNS
 SSH server is listening. The viewing device must be able to SSH to that target with its own keys or
 SSH agent.
 
-VS Code requires the Remote - SSH extension. Zed handles SSH projects directly. Browser clients
-cannot detect which editors are installed, so they offer both and hand the selected link to the
-operating system. T3 Connect carries T3 Code traffic but does not expose an SSH route by itself.
+VS Code requires the Remote - SSH extension. Zed handles projects on remote computers over SSH without the need of any additional plugin. Zed and Zed Preview share the `zed://` URL handler, so whichever instance has last been connected to the CLI will be used. To choose an instance, open its command palette and run **cli: register zed scheme**, then restart T3 Code Desktop afterward.
 
 #### SSH Launch Troubleshooting
 
